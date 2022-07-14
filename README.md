@@ -1,6 +1,6 @@
 # Model performance
 
-The model performance for different data sets and scenarious can be retrieved by running public_main.py
+The model performance for different data sets and scenarios can be retrieved by running public_main.py
 
 # Insider influence data set
 
