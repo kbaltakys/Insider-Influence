@@ -1,4 +1,12 @@
+# Model performance
+
+The model performance for different data sets and scenarious can be retrieved by running public_main.py
+
 # Insider influence data set
+
+An illustration of the code that is used to construct the final data sets from raw data are in files public_data_generation_illustation.py and public_dataset_anonymization.py.
+
+The anonymized data is available online in figshare: 10.6084/m9.figshare.20310240
 
 The data set is composed of eight different parts. Each part differs depending on the prediction horizon (Simultaneous or Lead-Lag), prediction window (Daily or Weekly), and type of trading (Buy or Sell). Each observation in the data sets speaks about the trading behavior in the local neighborhood of the ego-investor (an investor whose trading behavior is aimed to be predicted). Each observation contains the following information:
 
