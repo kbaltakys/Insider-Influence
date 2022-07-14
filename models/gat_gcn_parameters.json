@@ -1,0 +1,114 @@
+{
+    "gat_Lead-lag_D_Buy": {
+        "hidden-units": "16,16",
+        "heads": "1,1,1",
+        "lr": 0.4,
+        "batch": 64.0,
+        "drop-out": 0.2
+    },
+    "gcn_Lead-lag_D_Buy": {
+        "hidden-units": "16,16",
+        "heads": null,
+        "lr": 0.1,
+        "batch": 128.0,
+        "drop-out": 0.2
+    },
+    "gat_Lead-lag_D_Sell": {
+        "hidden-units": "16,16",
+        "heads": "1,1,1",
+        "lr": 0.2,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gcn_Lead-lag_D_Sell": {
+        "hidden-units": "32,32",
+        "heads": null,
+        "lr": 0.4,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gat_Lead-lag_W_Buy": {
+        "hidden-units": "8,8",
+        "heads": "2,2,1",
+        "lr": 0.05,
+        "batch": 64.0,
+        "drop-out": 0.0
+    },
+    "gcn_Lead-lag_W_Buy": {
+        "hidden-units": "32,32",
+        "heads": null,
+        "lr": 0.1,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gat_Lead-lag_W_Sell": {
+        "hidden-units": "16,16",
+        "heads": "1,1,1",
+        "lr": 0.1,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gcn_Lead-lag_W_Sell": {
+        "hidden-units": "16,16",
+        "heads": null,
+        "lr": 0.1,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gat_Simultaneous_D_Buy": {
+        "hidden-units": "8,8",
+        "heads": "2,2,1",
+        "lr": 0.05,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gcn_Simultaneous_D_Buy": {
+        "hidden-units": "16,16",
+        "heads": null,
+        "lr": 0.2,
+        "batch": 64.0,
+        "drop-out": 0.0
+    },
+    "gat_Simultaneous_D_Sell": {
+        "hidden-units": "8,8",
+        "heads": "2,2,1",
+        "lr": 0.1,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gcn_Simultaneous_D_Sell": {
+        "hidden-units": "16,16",
+        "heads": null,
+        "lr": 0.05,
+        "batch": 64.0,
+        "drop-out": 0.0
+    },
+    "gat_Simultaneous_W_Buy": {
+        "hidden-units": "8,8",
+        "heads": "2,2,1",
+        "lr": 0.2,
+        "batch": 64.0,
+        "drop-out": 0.0
+    },
+    "gcn_Simultaneous_W_Buy": {
+        "hidden-units": "32,32",
+        "heads": null,
+        "lr": 0.1,
+        "batch": 64.0,
+        "drop-out": 0.0
+    },
+    "gat_Simultaneous_W_Sell": {
+        "hidden-units": "16",
+        "heads": "1,1",
+        "lr": 0.2,
+        "batch": 128.0,
+        "drop-out": 0.0
+    },
+    "gcn_Simultaneous_W_Sell": {
+        "hidden-units": "32,32",
+        "heads": null,
+        "lr": 0.05,
+        "batch": 128.0,
+        "drop-out": 0.2
+    }
+}

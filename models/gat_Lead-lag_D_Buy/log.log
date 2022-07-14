@@ -1,0 +1,99 @@
+datatools.data_loader:INFO:2022-02-05 01:44:33,536:vertex ids loaded! Shape: (6100, 50)
+datatools.data_loader:INFO:2022-02-05 01:44:33,714:graphs loaded and prepared! Shape: (6100, 50, 50)
+datatools.data_loader:INFO:2022-02-05 01:44:33,715:influence features loaded! Shape: (6100, 50, 2)
+datatools.data_loader:INFO:2022-02-05 01:44:33,715:labels loaded! Shape: (6100,)
+datatools.data_loader:INFO:2022-02-05 01:44:33,716:global vertex features loaded! Shape: torch.Size([1790, 7])
+datatools.data_loader:INFO:2022-02-05 01:44:33,748:64-dim embedding loaded! Shape: torch.Size([1790, 64])
+datatools.data_loader:INFO:2022-02-05 01:44:33,748:6100 ego networks loaded, each with size 50
+datatools.data_loader:INFO:2022-02-05 01:44:33,749:Number of classes: 2
+datatools.data_loader:INFO:2022-02-05 01:44:33,749:Data set split into train[75]/valid[12.5]/test[12.5] found v.20.
+__main__:INFO:2022-02-05 01:44:33,751:NEW TRAINING EVENT!
+__main__:INFO:2022-02-05 01:44:33,751:Data file: ./data/real_data/real_0/derivatives/Lead-lag_D_Buy
+__main__:INFO:2022-02-05 01:44:33,751:Parameters: Namespace(batch=64, check_point=10, class_weight_balanced=True, cuda=True, data_split_seed=20, dim=64, disrupt_network=False, dropout=0.2, epochs=500, file_dir='./data/real_data/real_0/derivatives/Lead-lag_D_Buy', fin_data=True, heads='1,1,1', hidden_units='16,16', instance_normalization=True, last_conversion=False, lr=0.4, model='gat', neighbor_size=5, no_cuda=False, non_fin_data=False, patience=10, result_dir='./results/hyper_parameter_search_fixed2/real_0/Lead-lag_D_Buy/Feb05_01-44-31', seed=43, sequence_size=16, shuffle=False, start_timestamp='20220205_0144', tensorboard_log='logdir', tensorboard_logger=<torch.utils.tensorboard.writer.SummaryWriter object at 0x7f75cc55ef70>, train_ratio=75, use_vertex_feature=False, valid_ratio=12.5, verbose=False, weight_decay=0.001)
+train:INFO:2022-02-05 01:44:35,719:train loss in this epoch 1.000000 1.318389
+train:INFO:2022-02-05 01:44:35,752: epoch: 1 train_loss: 1.31839, valid_loss: 0.66954, best_thr: -0.9418884515762329
+utilities.pytorchtools:INFO:2022-02-05 01:44:35,752:First loss found
+utilities.pytorchtools:INFO:2022-02-05 01:44:35,752:Validation loss decreased (inf --> 0.669545).  Saving model ...
+train:INFO:2022-02-05 01:44:36,280:train loss in this epoch 2.000000 0.658020
+train:INFO:2022-02-05 01:44:36,313: epoch: 2 train_loss: 0.65802, valid_loss: 0.67619, best_thr: -0.9624769687652588
+utilities.pytorchtools:INFO:2022-02-05 01:44:36,313:EarlyStopping counter: 1 out of 10
+train:INFO:2022-02-05 01:44:36,817:train loss in this epoch 3.000000 0.642355
+train:INFO:2022-02-05 01:44:36,849: epoch: 3 train_loss: 0.64235, valid_loss: 0.67462, best_thr: -1.0665998458862305
+utilities.pytorchtools:INFO:2022-02-05 01:44:36,850:EarlyStopping counter: 2 out of 10
+train:INFO:2022-02-05 01:44:37,353:train loss in this epoch 4.000000 0.636270
+train:INFO:2022-02-05 01:44:37,385: epoch: 4 train_loss: 0.63627, valid_loss: 0.63866, best_thr: -0.6702253818511963
+utilities.pytorchtools:INFO:2022-02-05 01:44:37,385:Validation loss decreased (0.669545 --> 0.638656).  Saving model ...
+train:INFO:2022-02-05 01:44:37,890:train loss in this epoch 5.000000 0.616159
+train:INFO:2022-02-05 01:44:37,922: epoch: 5 train_loss: 0.61616, valid_loss: 0.63869, best_thr: -0.8684370517730713
+utilities.pytorchtools:INFO:2022-02-05 01:44:37,922:EarlyStopping counter: 1 out of 10
+train:INFO:2022-02-05 01:44:38,426:train loss in this epoch 6.000000 0.596272
+train:INFO:2022-02-05 01:44:38,458: epoch: 6 train_loss: 0.59627, valid_loss: 0.65217, best_thr: -0.5425747036933899
+utilities.pytorchtools:INFO:2022-02-05 01:44:38,458:EarlyStopping counter: 2 out of 10
+train:INFO:2022-02-05 01:44:38,962:train loss in this epoch 7.000000 0.590560
+train:INFO:2022-02-05 01:44:38,994: epoch: 7 train_loss: 0.59056, valid_loss: 0.61700, best_thr: -0.5913838148117065
+utilities.pytorchtools:INFO:2022-02-05 01:44:38,994:Validation loss decreased (0.638656 --> 0.616997).  Saving model ...
+train:INFO:2022-02-05 01:44:39,499:train loss in this epoch 8.000000 0.574888
+train:INFO:2022-02-05 01:44:39,531: epoch: 8 train_loss: 0.57489, valid_loss: 0.61325, best_thr: -0.7655026912689209
+utilities.pytorchtools:INFO:2022-02-05 01:44:39,531:Validation loss decreased (0.616997 --> 0.613254).  Saving model ...
+train:INFO:2022-02-05 01:44:40,036:train loss in this epoch 9.000000 0.573499
+train:INFO:2022-02-05 01:44:40,068: epoch: 9 train_loss: 0.57350, valid_loss: 0.60184, best_thr: -0.6780140995979309
+utilities.pytorchtools:INFO:2022-02-05 01:44:40,068:Validation loss decreased (0.613254 --> 0.601843).  Saving model ...
+train:INFO:2022-02-05 01:44:40,573:train loss in this epoch 10.000000 0.569785
+train:INFO:2022-02-05 01:44:40,605: epoch: 10 train_loss: 0.56978, valid_loss: 0.65373, best_thr: -0.5045665502548218
+utilities.pytorchtools:INFO:2022-02-05 01:44:40,605:EarlyStopping counter: 1 out of 10
+train:INFO:2022-02-05 01:44:41,109:train loss in this epoch 11.000000 0.562177
+train:INFO:2022-02-05 01:44:41,141: epoch: 11 train_loss: 0.56218, valid_loss: 0.58920, best_thr: -0.7261998653411865
+utilities.pytorchtools:INFO:2022-02-05 01:44:41,141:Validation loss decreased (0.601843 --> 0.589202).  Saving model ...
+train:INFO:2022-02-05 01:44:41,592:train loss in this epoch 12.000000 0.551194
+train:INFO:2022-02-05 01:44:41,624: epoch: 12 train_loss: 0.55119, valid_loss: 0.58992, best_thr: -0.4393773078918457
+utilities.pytorchtools:INFO:2022-02-05 01:44:41,625:EarlyStopping counter: 1 out of 10
+train:INFO:2022-02-05 01:44:42,075:train loss in this epoch 13.000000 0.551522
+train:INFO:2022-02-05 01:44:42,107: epoch: 13 train_loss: 0.55152, valid_loss: 0.59158, best_thr: -0.3244859576225281
+utilities.pytorchtools:INFO:2022-02-05 01:44:42,107:EarlyStopping counter: 2 out of 10
+train:INFO:2022-02-05 01:44:42,557:train loss in this epoch 14.000000 0.547327
+train:INFO:2022-02-05 01:44:42,590: epoch: 14 train_loss: 0.54733, valid_loss: 0.59907, best_thr: -0.5245983600616455
+utilities.pytorchtools:INFO:2022-02-05 01:44:42,590:EarlyStopping counter: 3 out of 10
+train:INFO:2022-02-05 01:44:43,039:train loss in this epoch 15.000000 0.540804
+train:INFO:2022-02-05 01:44:43,072: epoch: 15 train_loss: 0.54080, valid_loss: 0.58461, best_thr: -0.5868930220603943
+utilities.pytorchtools:INFO:2022-02-05 01:44:43,072:Validation loss decreased (0.589202 --> 0.584611).  Saving model ...
+train:INFO:2022-02-05 01:44:43,523:train loss in this epoch 16.000000 0.536523
+train:INFO:2022-02-05 01:44:43,555: epoch: 16 train_loss: 0.53652, valid_loss: 0.58222, best_thr: -0.45747414231300354
+utilities.pytorchtools:INFO:2022-02-05 01:44:43,556:Validation loss decreased (0.584611 --> 0.582216).  Saving model ...
+train:INFO:2022-02-05 01:44:44,006:train loss in this epoch 17.000000 0.533452
+train:INFO:2022-02-05 01:44:44,038: epoch: 17 train_loss: 0.53345, valid_loss: 0.58922, best_thr: -0.7814776301383972
+utilities.pytorchtools:INFO:2022-02-05 01:44:44,039:EarlyStopping counter: 1 out of 10
+train:INFO:2022-02-05 01:44:44,487:train loss in this epoch 18.000000 0.529406
+train:INFO:2022-02-05 01:44:44,519: epoch: 18 train_loss: 0.52941, valid_loss: 0.56290, best_thr: -0.5703226327896118
+utilities.pytorchtools:INFO:2022-02-05 01:44:44,520:Validation loss decreased (0.582216 --> 0.562904).  Saving model ...
+train:INFO:2022-02-05 01:44:44,970:train loss in this epoch 19.000000 0.523686
+train:INFO:2022-02-05 01:44:45,003: epoch: 19 train_loss: 0.52369, valid_loss: 0.59989, best_thr: -0.37489262223243713
+utilities.pytorchtools:INFO:2022-02-05 01:44:45,003:EarlyStopping counter: 1 out of 10
+train:INFO:2022-02-05 01:44:45,506:train loss in this epoch 20.000000 0.528431
+train:INFO:2022-02-05 01:44:45,538: epoch: 20 train_loss: 0.52843, valid_loss: 0.60244, best_thr: -0.5730900764465332
+utilities.pytorchtools:INFO:2022-02-05 01:44:45,538:EarlyStopping counter: 2 out of 10
+train:INFO:2022-02-05 01:44:46,042:train loss in this epoch 21.000000 0.526083
+train:INFO:2022-02-05 01:44:46,074: epoch: 21 train_loss: 0.52608, valid_loss: 0.59864, best_thr: -0.3721005320549011
+utilities.pytorchtools:INFO:2022-02-05 01:44:46,074:EarlyStopping counter: 3 out of 10
+train:INFO:2022-02-05 01:44:46,578:train loss in this epoch 22.000000 0.515671
+train:INFO:2022-02-05 01:44:46,610: epoch: 22 train_loss: 0.51567, valid_loss: 0.58765, best_thr: -0.4683353900909424
+utilities.pytorchtools:INFO:2022-02-05 01:44:46,610:EarlyStopping counter: 4 out of 10
+train:INFO:2022-02-05 01:44:47,114:train loss in this epoch 23.000000 0.513219
+train:INFO:2022-02-05 01:44:47,146: epoch: 23 train_loss: 0.51322, valid_loss: 0.61011, best_thr: -0.39927804470062256
+utilities.pytorchtools:INFO:2022-02-05 01:44:47,146:EarlyStopping counter: 5 out of 10
+train:INFO:2022-02-05 01:44:47,650:train loss in this epoch 24.000000 0.514897
+train:INFO:2022-02-05 01:44:47,682: epoch: 24 train_loss: 0.51490, valid_loss: 0.57339, best_thr: -0.6321040391921997
+utilities.pytorchtools:INFO:2022-02-05 01:44:47,682:EarlyStopping counter: 6 out of 10
+train:INFO:2022-02-05 01:44:48,132:train loss in this epoch 25.000000 0.510761
+train:INFO:2022-02-05 01:44:48,164: epoch: 25 train_loss: 0.51076, valid_loss: 0.57816, best_thr: -0.6336545944213867
+utilities.pytorchtools:INFO:2022-02-05 01:44:48,164:EarlyStopping counter: 7 out of 10
+train:INFO:2022-02-05 01:44:48,614:train loss in this epoch 26.000000 0.510634
+train:INFO:2022-02-05 01:44:48,646: epoch: 26 train_loss: 0.51063, valid_loss: 0.58731, best_thr: -0.5766394734382629
+utilities.pytorchtools:INFO:2022-02-05 01:44:48,646:EarlyStopping counter: 8 out of 10
+train:INFO:2022-02-05 01:44:49,095:train loss in this epoch 27.000000 0.504343
+train:INFO:2022-02-05 01:44:49,127: epoch: 27 train_loss: 0.50434, valid_loss: 0.62157, best_thr: -0.6926484107971191
+utilities.pytorchtools:INFO:2022-02-05 01:44:49,128:EarlyStopping counter: 9 out of 10
+train:INFO:2022-02-05 01:44:49,577:train loss in this epoch 28.000000 0.499887
+train:INFO:2022-02-05 01:44:49,609: epoch: 28 train_loss: 0.49989, valid_loss: 0.58849, best_thr: -0.7026122212409973
+utilities.pytorchtools:INFO:2022-02-05 01:44:49,609:EarlyStopping counter: 10 out of 10
+utilities.pytorchtools:INFO:2022-02-05 01:44:49,609:Will stop early
+train:INFO:2022-02-05 01:44:49,643: epoch: 28 train_loss: 0.49988713390085965, valid_loss: 0.5884922221791229, best_thr: -0.5703226327896118
