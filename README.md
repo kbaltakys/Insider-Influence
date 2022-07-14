@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/513898679.svg)](https://zenodo.org/badge/latestdoi/513898679)
 # Model performance
 
 The model performance for different data sets and scenarios can be retrieved by running public_main.py
